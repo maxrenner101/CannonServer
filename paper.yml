@@ -23,25 +23,32 @@ warnWhenSettingExcessiveVelocity: true
 world-settings:
   default:
     verbose: true
-    fix-cannons: true
-    disable-explosion-knockback: true
     water-over-lava-flow-speed: 5
     tnt-entity-height-nerf: 256
-    use-hopper-check: true
+    disable-explosion-knockback: true
+    allow-undead-horse-leashing: false
+    fix-cannons: true
+    container-update-tick-rate: 4
+    game-mechanics:
+      disable-end-credits: false
+      boats-drop-boats: false
+      disable-player-crits: false
+      disable-chest-cat-detection: true
+    keep-spawn-loaded: true
+    tick-next-tick-list-cap: 10000
+    tick-next-tick-list-cap-ignores-redstone: false
+    remove-invalid-mob-spawner-tile-entities: true
+    portal-search-radius: 32
+    disable-ice-and-snow: false
+    disable-thunder: false
     disable-teleportation-suffocation-check: false
-    cache-chunk-maps: true
-    lava-flow-speed:
-      normal: 15
-      nether: 5
-    player-exhaustion:
-      block-break: 0.02500000037252903
-      swimming: 0.014999999664723873
+    use-async-lighting: true
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 300
-    fast-drain:
-      lava: false
-      water: false
+    despawn-ranges:
+      soft: 64
+      hard: 96
     remove-unloaded:
       enderpearls: true
       tnt-entities: false
@@ -49,22 +56,33 @@ world-settings:
     squid-spawn-height:
       minimum: 45.0
       maximum: 63.0
+    player-exhaustion:
+      block-break: 0.02500000037252903
+      swimming: 0.014999999664723873
     load-chunks:
       enderpearls: false
       tnt-entities: true
       falling-blocks: false
-    game-mechanics:
-      boats-drop-boats: false
-      disable-player-crits: false
-      disable-chest-cat-detection: true
-      disable-end-credits: false
-    despawn-ranges:
-      soft: 64
-      hard: 96
-    use-async-lighting: true
-    disable-thunder: false
-    tick-next-tick-list-cap: 10000
-    tick-next-tick-list-cap-ignores-redstone: false
+    fast-drain:
+      lava: false
+      water: true
+    lava-flow-speed:
+      normal: 15
+      nether: 5
+    disable-mood-sounds: false
+    falling-blocks-collide-with-signs: false
+    falling-block-height-nerf: 0
+    optimize-explosions: true
+    nether-ceiling-void-damage: true
+    tnt-explosion-volume: 4.0
+    player-blocking-damage-multiplier: 0.5
+    mob-spawner-tick-rate: 10
+    max-growth-height:
+      cactus: 3
+      reeds: 3
+    cache-chunk-maps: true
+    use-hopper-check: true
+    allow-block-location-tab-completion: true
     generator-settings:
       canyon: true
       caves: true
@@ -76,22 +94,4 @@ world-settings:
       temple: true
       village: true
       flat-bedrock: true
-    allow-block-location-tab-completion: true
-    container-update-tick-rate: 4
-    falling-blocks-collide-with-signs: false
-    keep-spawn-loaded: true
-    disable-mood-sounds: false
-    portal-search-radius: 32
-    disable-ice-and-snow: false
     all-chunks-are-slime-chunks: false
-    allow-undead-horse-leashing: false
-    remove-invalid-mob-spawner-tile-entities: true
-    mob-spawner-tick-rate: 10
-    nether-ceiling-void-damage: true
-    optimize-explosions: false
-    max-growth-height:
-      cactus: 3
-      reeds: 3
-    player-blocking-damage-multiplier: 0.5
-    tnt-explosion-volume: 4.0
-    falling-block-height-nerf: 0
